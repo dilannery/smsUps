@@ -1,50 +1,52 @@
 {
    "inputVac":{
-      "value_template": "{{value_json.inputVac}}",
-      "name":"Tensão de entrada",
+      "name":"inputVac",
       "device_class":"voltage",
       "state_class":"measurement",
       "icon":"mdi:transmission-tower-export",
       "unit_of_measurement":"V"
    },
    "outputVac":{
-      "value_template": "{{value_json.outputVac}}",
-      "name":"Tensão de saída",
+      "name":"outputVac",
       "icon":"mdi:power-socket-fr",
       "device_class":"voltage",
       "state_class":"measurement",
       "unit_of_measurement":"V"
    },
    "outputHz":{
-      "value_template": "{{value_json.outputHz}}",
-      "name":"Frequência de saída",
+      "name":"outputHz",
       "icon":"mdi:sine-wave",
       "state_class":"measurement",
       "unit_of_measurement":"Hz"
    },
    "outputPower":{
-      "value_template": "{{value_json.outputPower}}",
-      "name":"Nível da carga",
+      "name":"outputPower",
       "device_class":"power_factor",
+      "icon":"mdi:fuel",
       "unit_of_measurement":"%"
    },
    "powerNow":{
-      "value_template": "{{value_json.powerNow}}",
-      "name":"Potência de saída",
+      "name":"powerNow",
       "device_class":"power",
-      "state_class":"measurement",
+      "icon":"mdi:bolt",
       "unit_of_measurement":"W"
    },
    "batterylevel":{
-      "value_template": "{{value_json.batterylevel}}",
-      "name":"Nível da bateria",
+      "name":"batterylevel",
+      "state_class":"measurement",
       "device_class":"battery",
       "unit_of_measurement":"%"
    },
    "temperatureC":{
-      "value_template": "{{value_json.temperatureC}}",
-      "name":"Temperatura",
+      "name":"temperatureC",
+      "state_class":"measurement",
       "device_class":"temperature",
       "unit_of_measurement":"°C"
+   },
+   "todos":{ 
+       "name":"",
+       "device_class":"",
+       "icon":"",
+       "unit_of_measurement":""
    }
 }
